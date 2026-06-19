@@ -1,0 +1,67 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #0f172a;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+.gradient-bg {
+  background: radial-gradient(circle at top left, #1e40af 0%, transparent 40%),
+              radial-gradient(circle at bottom right, #10b981 0%, transparent 40%),
+              #0f172a;
+}
+
+.glass {
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/* Clases de utilidad para colores académicos */
+.text-academic-teal { color: #2dd4bf; }
+.bg-academic-teal { background-color: #2dd4bf; }
+.border-academic-teal { border-color: #2dd4bf; }
+
+.text-academic-light { color: #99f6e4; }
+.bg-academic-light { background-color: #99f6e4; }
+.border-academic-light { border-color: #99f6e4; }
+
+.text-academic-emerald { color: #10b981; }
+.bg-academic-emerald { background-color: #10b981; }
+.border-academic-emerald { border-color: #10b981; }
+
+.bg-academic-dark { background-color: #0f172a; }
+.bg-academic-blue { background-color: #1e40af; }
+
+.custom-scrollbar::-webkit-scrollbar {
+  width: 6px;
+}
+.custom-scrollbar::-webkit-scrollbar-track {
+  background: rgba(255, 255, 255, 0.05);
+}
+.custom-scrollbar::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 10px;
+}
+.custom-scrollbar::-webkit-scrollbar-thumb:hover {
+  background: rgba(255, 255, 255, 0.3);
+}
